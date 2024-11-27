@@ -17,46 +17,71 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
 	<dependencies>
+		<!-- Dependency cho Spring Boot starter cơ bản, cung cấp các cấu hình và thành phần cốt lõi -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<!-- Dependency cho việc viết và chạy các test trong Spring Boot, bao gồm JUnit và các công cụ kiểm thử khác -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Dependency cho các ứng dụng web, cung cấp các cấu hình MVC mặc định trong Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- Dependency giúp tự động cập nhật ứng dụng khi có thay đổi trong code mà không cần restart lại ứng dụng -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
 
+		<!-- Dependency cho việc sử dụng JPA, giúp thao tác dễ dàng với cơ sở dữ liệu qua các đối tượng Java -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+		<!-- Dependency cho MySQL Connector, giúp kết nối với cơ sở dữ liệu MySQL -->
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 		</dependency>
 
+		<!-- Dependency cho Spring Security, giúp cấu hình các tính năng bảo mật cho ứng dụng -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
+		<!-- Dependency cho Tomcat Embed Jasper, hỗ trợ JSP rendering trong ứng dụng Spring Boot -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
 
+		<!-- Dependency cho JSTL API, cung cấp các tag JSP chuẩn như `c:if`, `c:forEach` trong ứng dụng JSP -->
+		<dependency>
+			<groupId>jakarta.servlet.jsp.jstl</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+		</dependency>
+
+		<!-- Dependency triển khai JSTL, giúp sử dụng các tag JSTL trong ứng dụng JSP -->
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+		</dependency>
 	</dependencies>
+
 
 	<build>
 		<plugins>
